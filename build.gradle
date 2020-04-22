@@ -22,4 +22,4 @@ javafx {
     version = '11'
     modules = ['javafx.controls', 'javafx.fxml']
 }
-mainClassName = 'bsu.comp152.main'
+mainClassName = 'bsu.comp152.Main'
