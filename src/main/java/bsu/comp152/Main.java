@@ -20,13 +20,13 @@ public class Main extends Application {
         var loc = getClass().getResource("Main.fxml");
         try {
             root = FXMLLoader.load(loc);
-        }catch(IOException e){
-            System.out.println("Couldn't find FXML file!");
+        }catch (IOException e){
+            System.out.println("Couldn't Find FXML file!!!!!!" +
+                    "Or maybe you threw an exception in your controller");
         }
         Scene windowContents = new Scene(root, 300,400);
         primaryStage.setScene(windowContents);
         primaryStage.setTitle("Showing Web Data");
         primaryStage.show();
-
     }
 }
