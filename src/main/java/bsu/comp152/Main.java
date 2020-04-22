@@ -21,7 +21,7 @@ public class Main extends Application {
         try {
             root = FXMLLoader.load(loc);
         }catch (IOException e){
-            System.out.println("Couldn't Find FXML file!!!!!!" +
+            System.out.println("Couldn't Find FXML file!" +
                     "Or maybe you threw an exception in your controller");
         }
         Scene windowContents = new Scene(root, 300,400);

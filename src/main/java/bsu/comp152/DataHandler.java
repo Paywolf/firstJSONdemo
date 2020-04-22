@@ -10,15 +10,14 @@ import java.net.http.HttpResponse;
 import java.util.ArrayList;
 
 public class DataHandler {
+
     private HttpClient dataGrabber;
     private String webLocation;
-
 
     public DataHandler(String webLocation) {
         dataGrabber = HttpClient.newHttpClient();
         this.webLocation = webLocation;
     }
-
 
     public ArrayList<recipeDataType> getData(){
         var requestBuilder = HttpRequest.newBuilder();
@@ -45,7 +44,6 @@ public class DataHandler {
         float version;
         String href;
         ArrayList<recipeDataType> results;
-
     }
     class recipeDataType {
         String title;
@@ -54,7 +52,6 @@ public class DataHandler {
         String thumbnail;
         @Override
         public String toString() {
-            return "Recipe Title:" + title ; // only title for display later
-        }
-    }
+            return "Recipe Title: " + title ;  //only title for display later
+        }}
 }
